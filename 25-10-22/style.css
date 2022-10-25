@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;800&display=swap");
+
+html, body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(133, 95, 103);
+    font-family: "Montserrat";
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 200px;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    cursor: pointer;
+}
+
+h1:hover{
+    background-color: whitesmoke;
+    color: rgb(133, 95, 103);
+}
+
+
