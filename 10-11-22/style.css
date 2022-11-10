@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #1f2632;
+}
+
+#generator {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px 30px;
+    width: 400px;
+    height: auto;
+    font-family: "Manrope";
+    background-color:  #323a4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    color: #cee3ea;
+    box-shadow: 5px 5px 20px black;
+}
+
+#idAdvice {
+    color:  #52ffa8;
+}
+
+.loading{
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+
+
+#btn__generator{
+    font-family: "Manrope";
+    border: whitesmoke;
+    border-radius: 20%;
+    padding: 10px 20px;
+    background-color: #71f6a8;
+    box-shadow: 1px 1px 25px #52ffa8;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#btn__generator:hover{
+    transform: scale(1.2);
+}

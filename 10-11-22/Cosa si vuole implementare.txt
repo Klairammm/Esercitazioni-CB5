@@ -1,0 +1,6 @@
+COSA SI VUOLE IMPLEMENTARE
+
+1.Premere un bottone
+2.Mandare una richiesta al server
+3.Creazione della card contenente l'advice con il rispettivo #ID tramite una funzione
+4.Aggiunta di un loader per il caricamento
