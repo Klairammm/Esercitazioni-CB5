@@ -1,0 +1,27 @@
+-----API utilizzata----
+
+(https://jsonplaceholder.typicode.com/posts/1)
+
+
+-----Obiettivo dell’esercizio-----
+
+Creare una card dinamica che mostri i seguenti valori al proprio interno: 
+-id
+-title
+-body
+
+Creare due bottoni, Prev e Next, ai quali aggiungere un evento al click. 
+
+
+-----Funzionalità da implementare-----
+
+-Al primo download dovrà essere stampato a video il primo Post restituito dall’API in posizione i = 1 → url/posts/1. 
+
+-Premendo il bottone next, verrà effettuata una fetch su di un indice i + 1 e verrà aggiornata la card con i nuovi dati.
+
+-Premendo il bottone prev, verrà effettuata una fetch su di un indice i - 1 e verrà aggiornata la card con i nuovi dati. 
+
+-Inserire un loader
+
+-Lavorare con i branch
+
