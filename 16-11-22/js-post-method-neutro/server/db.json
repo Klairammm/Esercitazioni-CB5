@@ -1,0 +1,39 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbasarur",
+      "type": "grass"
+    },
+    {
+      "id": "3",
+      "name": "Charmender",
+      "type": "fire"
+    },
+    {
+      "id": "4e0c3107-4e3e-4f15-b406-c5f0583f697a",
+      "name": "Charizard",
+      "type": "fire"
+    },
+    {
+      "id": "2a528fd6-3191-405e-910f-7c16d7cd03be",
+      "name": "Squirtle",
+      "type": "water"
+    },
+    {
+      "id": "960487ae-330c-4728-8c3d-338dae5e1fc1",
+      "name": "Kakuna",
+      "type": "poison"
+    },
+    {
+      "id": "530e1b8a-5be6-4c29-a1ef-1fe58c3d6d33",
+      "name": "Clefairy",
+      "type": "fairy"
+    },
+    {
+      "id": "ad4be47d-228a-48be-86a1-611c39f920d1",
+      "name": "Golbat",
+      "type": "flying"
+    }
+  ]
+}
