@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+body {
+    padding: 0 50px;
+    background-color: #1f2632;
+    font-family: "Manrope";
+}
+
+nav {
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* h1 {
+    text-align: center;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+} */
+
+.tracking-in-contract-bck {
+	-webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(400px);
+              transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+} 
+
+h3 {
+  color: whitesmoke;
+}
+
+.container {
+    border: 1px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px black;
+    padding: 20px 20px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container__patch{    border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: 5px 5px 20px black;
+  padding: 20px 20px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  border-top: 1px solid whitesmoke;
+  padding: 10px 10px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.poke__list{
+    padding: 30px 30px;
+    color: whitesmoke;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px black;
+    border-radius: 30px;
+    background-color: #323a4a;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+input {
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    padding: 10px 10px;
+    font-family: "Manrope";
+    color: whitesmoke;
+    background-color: #323a4a;
+}
+
+.btn {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+li{
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  transition: 0.5s;
+  box-shadow: 1px 1px 5px black;
+}
+
+li:hover{
+  transform: scale(1.1);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  background-color: #1f2632;
+  color: whitesmoke;
+  box-shadow: 1px 1px 10px whitesmoke;
+}

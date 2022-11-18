@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <nav>
+
+      <div class="tracking-in-contract-bck">
+        <h1>Pokédex</h1>
+      </div>
+
+      <form>
+        <input class="search__input" type="text" placeholder="🔍Search.." />
+      </form>
+
+    </nav>
+
+
+    <section class="forms">
+
+    <!-- FORM SUBMIT POKEMON -->
+      <h3>Inserisci un Pokémon</h3>
+      <form class="container" name="pokemon" autocomplete="off">
+        <!-- <input type="text" name="poke__id" placeholder="ID del Pokémon"/> -->
+        <input type="text" name="poke__name" placeholder="NOME del Pokémon"/>
+        <input type="text" name="poke__type" placeholder="TYPE del Pokémon"/>
+        <input class="btn" type="submit" />
+      </form>
+
+    <!-- END FORM SUBMIT POKEMON -->
+
+    <!-- FORM MODIFY POKEMON -->
+      <h3>Modifica il Pokémon</h3>
+      <form class="container__patch" name="pokemonPatch" autocomplete="off">
+        <input type="text" placeholder="Insert ID" name="id" />
+        <input type="text" placeholder="Insert NAME" name="name">
+        <input type="text" placeholder="Insert TYPE" name="type">
+        <input type="submit" value="Modify">
+      </form>
+    <!-- END FORM MODIFY POKEMON -->
+    
+    </section>
+
+    <div class="tracking-in-contract-bck">
+      <h2>Lista Pokémon</h2>
+    </div>
+
+    <ul class="poke__list"></ul>
+
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/utils.js"></script>
+  </body>
+</html>
