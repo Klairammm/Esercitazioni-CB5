@@ -1,0 +1,131 @@
+---creazione file principale: script.js
+---creazione file calcolatrice con le quattro funzioni: calcolatrice.js
+---esportare le 4 funzioni da calcolatrice.js
+---importare le 4 funzioni su script.js
+
+N. B. -> per ogni singola modifica chiudere e riaprire il terminale -> node script.js
+
+---per import/export
+
+nel terminale scrivere -> npm init -y
+spunterà package.json nella cartella
+sotto "main" inserire "type": "module"
+
+---fare un console.log(somma(1,2)) per sicurezza e nel terminale lanciare
+node script.js -> dovrebbe dare 3, se tutto funziona
+
+---importare http server
+
+import http from "http";
+
+---importare l'url del localhost
+
+import url from "url";
+
+---fare una prova per vedere se il server funziona
+
+const server = http.createServer((req, res) => {
+    res.write("bella raga");
+    res.end()
+})
+
+---e la porta di riferimento 
+
+server.listen(3000)
+
+---riavviare il terminare e scrivere sempre
+
+node ./script.js
+
+---aprire browser in incognito e scrivere
+
+localhost:3000 -> dovrebbe spuntare "bella raga"
+
+---costruire lo switch
+
+    switch(my_url) {
+        case "/home":
+            res.write("Home");
+            break;
+        case "/calcolatrice":
+            res.write("Calcolatrice");
+            break;  
+        case "/somma":
+            res.write("Somma");
+            break;   
+        case "/sottrazione":
+            res.write("Sottrazione");
+            break;   
+        case "/Moltiplicazione":
+            res.write("Moltiplicazione");
+            break;  
+        case "/divisione":
+            res.write("Divisione");
+            break;   
+        default:
+            res.write("<h1>Ahi ahi ahi</h1><p>La pagina non esiste, torna alla <a href='/home'>Buenohome<a></p>")     
+    }
+
+---prendere i parametri
+
+    const params = url.parse(req.url, true).query
+    const {param1, param2} = params
+    console.log(param1, param2)
+
+---su postman
+
+new collection -> calcolatrice + add request in Home e nella get scrivere 
+
+http://localhost:3000/?param1=2&param2=2 e fare send
+
+sotto dovrebbe spuntare il risultato del default di switch
+e nel terminale di VSC dovremmo vedere i due parametri passati, 2 e 2 nel nostro caso
+
+---trasformare in interi i numeri delle funzioni di calcolatrice.js
+
+function somma(num1, num2) {
+    return parseInt(num1)+ parseInt(num2)
+}
+
+e per le altre
+
+---su postman fare http://localhost:3000/somma?param1=2&param2=2 poi send e dovrebbe dare 4
+
+---lo stesso http://localhost:3000/somma?param1=2&param2=2 incollato sul browser da 4
+
+---aggiungere i parametri dentro lo switch sostituendo i primi res.write scritti
+
+    switch(my_url) {
+        case "/home":
+            res.write("Home");
+            break;
+        case "/calcolatrice":
+            res.write("Calcolatrice");
+            break;  
+        case "/somma":
+            //res.write("Somma");
+            res.write(`${somma(param1, param2)}` )
+            break;   
+        case "/sottrazione":
+            //res.write("Sottrazione");
+            res.write(`${sottrazione(param1, param2)}` )
+            break;   
+        case "/Moltiplicazione":
+            //res.write("Moltiplicazione");
+            res.write(`${moltiplicazione(param1, param2)}` )
+            break;  
+        case "/divisione":
+            //res.write("Divisione");
+            res.write(`${divisione(param1, param2)}` )
+            break;   
+        default:
+            res.write("<h1>Ahi ahi ahi</h1><p>La pagina non esiste, torna alla <a href='/home'>Buenohome<a></p>")     
+    }
+
+---su postman come abbiamo creato home, creare una singola pagina per ogni operazione
+quindo avremo:
+home -> http://localhost:3000
+somma -> http://localhost:3000/somma?param1=2&param2=2
+sottrazione -> http://localhost:3000/sottrazione?param1=10&param2=2
+moltiplicazione -> http://localhost:3000/moltiplicazione?param1=2&param2=2
+divisione -> http://localhost:3000/divisione?param1=10&param2=2

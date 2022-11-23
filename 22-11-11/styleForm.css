@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(204, 231, 204);
+}
+
+h1{
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    padding: 10px 10px;
+}
+
+.btn {
+    cursor: pointer;
+    transition: 0.40s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
