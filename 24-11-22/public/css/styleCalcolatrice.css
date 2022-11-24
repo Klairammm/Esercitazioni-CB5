@@ -1,0 +1,41 @@
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6Tbq2-CgQZfO1uLVtZ_XvOO3RqUmMLGSYw&usqp=CAU);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+h1{
+    padding: 20px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px black;
+    background-color: whitesmoke;
+}
+
+.operation {
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    width: 300px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    padding: 10px 10px;
+    border: none;
+    background-color: rgb(208, 248, 208);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.40s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
