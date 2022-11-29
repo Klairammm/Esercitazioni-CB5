@@ -1,0 +1,48 @@
+-> npm init
+
+-> npm i express
+
+-> npm i nodemon
+------------------
+
+in package.json sotto "test"
+-> "start": "nodemon index.js"
+
+---------------------
+cartelle public e src
+-------------
+(0)
+cominciamo a creare il server su index
+--------------
+dopo aver messo il server in ascolto provare se funziona -> npm start
+---------------------------
+fareuna prima chiamata get per ottenere gli attori
+---------------------------
+(1) -> su postman creare Videoteca e poi fare add request 
+per gli attori (GET) -> http://localhost:3000/attori
+---------------------------
+su postman aggiungere tutte le request per le modifiche su /attore
+---------------------------
+poi in src mettere un file "attori.txt" in cui copiamo il contenuto del json attori
+per spostarlo e fare il readFile ed utilizzare il modulo fs le sue due proprietà:
+//readfile
+const {readFileSync, writeFileSync} = require("fs")
+---------------------------
+togliere quindi il json const attori e scrivere:
+
+    //leggere il file txt degli attori
+    const attori_txt = readFileSync('./src/attori.txt', 'utf8')
+    //controllare la lettura del file
+    console.log(attori_txt)
+    //inserire file letto in costante e leggerlo in json
+    const attori = JSON.parse(attori_txt)
+    //controllare
+    console.log(attori)
+-----------------------
+nella POST metto i parametri nel body in form-data oppure in x-www-form-urlencoded
+mettendo id in form data ci restituisce {} vuoto
+con x-www-form-urlencoded ci da:
+Body: {
+    "id": "4"
+}
+
