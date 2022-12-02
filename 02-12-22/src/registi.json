@@ -1,0 +1,42 @@
+[
+    {
+      "id": 1,
+      "nome": "Kim",
+      "cognome": "Ki-Duk",
+      "data_nascita": "03/07/1962",
+      "riconoscimenti": "Elenco premi vinti",
+      "inizio_attivita": "1980",
+      "fine_attivita": "",
+      "in_attivita": true
+    },
+    {
+      "id": 2,
+      "nome": "Takashi",
+      "cognome": "Miike",
+      "data_nascita": "17/08/1943",
+      "riconoscimenti": "Elenco premi vinti",
+      "inizio_attivita": "1960",
+      "fine_attivita": "",
+      "in_attivita": true
+    },
+    {
+      "id": 3,
+      "nome": "Ingmar",
+      "cognome": "Bergman",
+      "data_nascita": "29/04/1970",
+      "riconoscimenti": "tanti",
+      "inizio_attivita": "1998",
+      "fine_attivita": "",
+      "in_attivita": "true"
+    },
+    {
+        "id": 4,
+        "nome": "Quentin",
+        "cognome": "Tarantino",
+        "data_nascita": "27/03/1963",
+        "riconoscimenti": "Da tutti",
+        "inizio_attivita": "1990",
+        "fine_attivita": "",
+        "in_attivita": "true"
+      }
+  ]
