@@ -105,8 +105,8 @@ const insertRegista = async(obj)=>{
 
 const searchRegista = async(find_object)=> {
     try {
-        const actor = await modelRegista.find(find_object);
-        return actor;
+        const director = await modelRegista.find(find_object);
+        return director;
     } catch (error) {
         return error;
     }
@@ -114,8 +114,8 @@ const searchRegista = async(find_object)=> {
 
 const deleteRegista = async(id_regista)=> {
     try {
-        const actor = await modelRegista.deleteOne({_id: id_regista});
-        return actor;
+        const director = await modelRegista.deleteOne({_id: id_regista});
+        return director;
     } catch (error) {
         return error;
     }
@@ -123,8 +123,8 @@ const deleteRegista = async(id_regista)=> {
 
 const updateRegista = async(find_object, update_object) => {
     try {
-        const actor = await modelRegista.findOneAndUpdate(find_object, update_object);
-        return actor;
+        const director = await modelRegista.findOneAndUpdate(find_object, update_object);
+        return director;
     } catch (error) {
         return error;
     }
