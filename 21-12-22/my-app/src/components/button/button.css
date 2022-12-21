@@ -1,0 +1,38 @@
+.Button{
+    background: transparent;
+    border: 1px solid;
+    border-radius: .3em;
+    color: #222;
+    cursor: pointer;
+    padding: .4em .6em;
+}
+
+.Button:hover{
+    text-decoration: underline;
+}
+
+.Button--variant-primary{
+    background: rebeccapurple;
+    color: #fff;
+}
+
+.Button--variant-no_touch{
+    background: rgba(255, 0, 0, 0.284);
+    color: #fff;
+}
+
+.Button--variant-game{
+    background: rgba(64, 255, 0, 0.4);
+    color: #fff;
+    text-decoration: none;
+}
+
+.Button--variant-game a:link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.Button--variant-game a:visited{
+    color: #fff;
+    text-decoration: none;
+}
