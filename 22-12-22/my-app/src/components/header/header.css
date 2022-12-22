@@ -1,0 +1,45 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    width: min(100%, 1200px);
+}
+
+.row{
+    border-bottom: 1px solid white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav ul{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+.nav ul li{
+        display: inline-block;
+    }
+
+.nav ul li a:link{
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
