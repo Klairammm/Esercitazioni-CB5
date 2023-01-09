@@ -1,0 +1,15 @@
+li {
+  border-bottom: 2px solid #61dafb;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background-color: #282c34;
+  padding: 10px 10px;
+  border-radius: 20%;
+  border-color: #61dafb;
+  color: white;
+  font-size: medium;
+}
