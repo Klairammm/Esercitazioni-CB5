@@ -1,0 +1,6 @@
+.Counter :is(button, output) {
+  background: transparent;
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem;
+}
